@@ -6,35 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sravanam Foods</title>
     <style>
-        body {
-            text-align: left;
+        body, .mainImg, .mainContent {
             margin: 0;
+            padding: 0;
         }
         
-        .mainImg {
-            margin-top: -12.5rem;
-            width: 99vw;
-            height: 72vh;
-            background-image: url("img.jpg")
+        .mainImg img {
+            width: 98.7vw;
+            height: 150vh;
+            object-fit:fill;
         }
         .mainContent {
-            margin: 0 auto;
-            display: flex;
             background-color: aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
         .mainContent img {
-            width: 30%;
-            padding: 1%;
+            width: 32%;
+            height: 50%;
+            object-fit: fill;
+        }
+        
+        @media (max-width: 1000px) {
+            .mainContent img {
+                width: 50%;
+            }
+        }
+        @media (max-width: 800px) {
+            .mainContent img {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="mainImg"></div> 
-    <div class="mainContent">
-        <img src="img1.jpg" alt="">
-        <img src="img2.jpg" alt="">
-        <img src="img3.jpg" alt="">
-        
+    <div class="mainImg">
+        <img src="cimg.jpg" alt="">
+    </div> 
+    <div class="mainContent"> 
+        <img src="cimg1.jpg" alt="">       
+        <img src="cimg2.jpg" alt="">       
+        <img src="cimg3.jpg" alt="">       
     </div>
 </body>
 </html>
